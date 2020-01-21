@@ -1,0 +1,17 @@
+// GraphQL
+mutation {
+    widget(input: {
+        id: "vofWidget"
+        name: "vofData"
+    }) {
+        name
+        fields
+    }
+}
+
+payload: {
+    widget: {
+        name: "vofData",
+        fields: [{}, //...],
+    }
+}

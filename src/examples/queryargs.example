@@ -1,0 +1,19 @@
+// GraphQL
+query {
+    renditions(id: "12345") {
+        link
+        fileSize
+        type
+    }
+}
+
+payload: {
+    renditions: {
+        link: "/ui/proxy/rendition-download/0",
+        fileSize: "302.9kb",
+        type: {
+            key: "rendition"
+            label: "Rendition"
+        }
+    }
+}

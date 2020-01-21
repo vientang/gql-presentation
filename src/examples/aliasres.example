@@ -1,0 +1,13 @@
+// GraphQL alias payload
+{
+    "payload": {
+        "vofDetails" {
+            "name": "vofDetails",
+            "controls": "[]"
+        },
+        "adminPage" {
+            "name": "adminPage",
+            "controls": "[]"
+        }
+    }
+}

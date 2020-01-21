@@ -1,0 +1,13 @@
+query {
+    widget(name: "vofDetail") {
+        name
+        fields
+    }
+}
+
+payload: {
+    widget: {
+        name: "vofDetail",
+        fields: [{}, //...],
+    }
+}

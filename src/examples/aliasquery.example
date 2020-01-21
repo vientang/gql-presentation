@@ -1,0 +1,11 @@
+// GraphQL alias
+query {
+    widget(name: "vofDetails") {
+        name
+        controls
+    }
+    widget(name: "adminPage") {
+        name
+        controls
+    }
+}

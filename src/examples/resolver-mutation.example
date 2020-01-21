@@ -1,0 +1,20 @@
+{
+    resolvers: {
+        mutation: {
+            widget(parent, args, context) {
+                let modifiedWidget;
+                context.widgets.forEach((widget) => {
+                    if (widget.id === args.input.id) {
+                        widget.name = args.input.name;
+                        modifiedWidget = widget;
+                    }
+                });
+                return {
+                    name: modifiedWidget.name,
+                    fields: modifiedWidget.fields
+                }
+            }
+        },
+        query: { // resolvers to query your data }
+    }
+}

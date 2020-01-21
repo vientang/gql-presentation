@@ -1,0 +1,11 @@
+type Widget {
+    name: String!
+    controls: [Control]
+    fields: [Field]
+    fieldsNoSpacers: [FieldsNoSpacer]
+    firstWidget: Boolean
+    hasCount: Boolean
+    includeDefaultSectionTitle: Boolean
+    splitIndex: Int
+    standaloneEdit: Boolean
+}

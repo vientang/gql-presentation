@@ -1,0 +1,17 @@
+// GraphQL enums
+type RootQuery {
+    controls(appName: Applications): [ApplicationControl]!
+}
+
+enum Applications {
+    CLAIMS
+    SAFETY
+    QUALITY
+    CLINICAL
+}
+
+type ApplicationControl {
+    bindings: [Binding]!
+    clientName: String,
+    // other stuff
+}

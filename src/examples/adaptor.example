@@ -1,0 +1,19 @@
+const adaptor = (props) => {
+    const impliedControllingFields = get(props.fieldData, 'config.impliedControllingFields') || [];
+    const controllingFieldsValues = get(props.fieldData, 'config.controllingFieldsValues') || {};
+    const multiValueOptions = get(props.fieldData, 'config.multiValueOptions') || [];
+    const dependsOnWatermark = impliedControllingFields.length ? i18n.base.general.field_dynamic_dependencies_ghost_text : '';
+
+	return {
+        ...props.fieldData,
+        controllingFieldsValues,
+        defaultValue: props.fieldData.currentValue ? props.fieldData.currentValue.key : '',
+        dependsOnWatermark,
+        impliedControllingFields,
+        multiValueOptions,
+        layout: 'horizontal',
+        name: props.fieldData.key,
+        valueLabel: props.fieldData.currentValue ? props.fieldData.currentValue.label : '',
+        copyMode: props.widgetOptions.copyMode,
+    }
+}

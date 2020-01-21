@@ -1,0 +1,11 @@
+type Field {
+    bindings: [Binding!]!
+    control: Control
+    clientName: String
+    contexts: [Context]
+    controlLayoutId: String!
+    eventControlName: String!
+    name: String!
+    outputs: [Output]
+    properties: [Property]
+}

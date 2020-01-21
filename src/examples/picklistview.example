@@ -1,0 +1,9 @@
+// props for view mode
+{
+    defaultValue: PropTypes.string,
+    editMode: PropTypes.bool,
+    layout: PropTypes.string,
+    maySerialize: PropTypes.bool,
+    name: PropTypes.string,
+    valueLabel: PropTypes.string,
+};

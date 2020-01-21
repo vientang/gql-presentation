@@ -1,0 +1,14 @@
+payload: {
+    // other data that we do not need,
+    widget: {
+        name: "vofDetail",
+        controls: [{}, //],
+        fields: [{}, //],
+        fieldsNoSpacers: [{}, //],
+        firstWidget: false,
+        hasCount: false,
+        includeDefaultSectionTitle: false,
+        splitIndex: 4,
+        standaloneEdit: false
+    }
+}

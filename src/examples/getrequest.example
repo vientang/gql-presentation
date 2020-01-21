@@ -1,0 +1,21 @@
+const get = (url, data) =>
+    new Promise((resolve, reject) => {
+        $.ajax({
+            url,
+            method: 'GET',
+            data,            
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: (resolve, reject) => {
+                return (result, status, xhr) => {
+                    ModelUtils.preprocessSuccess(
+                        () => resolve(result), 
+                        result, 
+                        status, 
+                        xhr, 
+                        (errorMessage) => reject(errorMessage),
+                    );
+                };
+            };,
+        });
+    });

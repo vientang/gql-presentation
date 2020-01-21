@@ -1,0 +1,18 @@
+{
+    resolvers: {
+        query: {
+            widget(parent, args, context) {
+                const widget = context.widgets.find((widget) => {
+                    return widget.name === args.name;
+                });
+                return {
+                    name: widget.name,
+                    fields: widget.fields
+                }
+            }
+        },
+        mutation: {
+            // resolvers to change your data
+        }
+    }
+}
